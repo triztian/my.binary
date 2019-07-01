@@ -1,8 +1,7 @@
 package main
 
-import "fmt"
-import "github.com/triztian/my.special.library/sub-package"
+import "github.com/triztian/my.binary/cmd"
 
 func main() {
-	fmt.Println(subpkg.Sum(1, 2))
+	cmd.Run()
 }
