@@ -1,0 +1,707 @@
+WORK=/var/folders/g1/v3hz1sm92nv7wbzpg3dx_h_h0000gp/T/go-build366566421
+internal/race
+mkdir -p $WORK/b019/
+math/bits
+mkdir -p $WORK/b009/
+errors
+mkdir -p $WORK/b004/
+cat >$WORK/b009/importcfg << 'EOF' # internal
+# import config
+EOF
+cat >$WORK/b004/importcfg << 'EOF' # internal
+# import config
+EOF
+cat >$WORK/b019/importcfg << 'EOF' # internal
+# import config
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/math/bits
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b009/_pkg_.a -trimpath $WORK/b009 -p math/bits -std -complete -buildid IXdIZSTujaIWZcSkWXuW/IXdIZSTujaIWZcSkWXuW -goversion go1.12.6 -D "" -importcfg $WORK/b009/importcfg -pack -c=4 ./bits.go ./bits_tables.go
+cd /usr/local/Cellar/go/1.12.6/libexec/src/errors
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b004/_pkg_.a -trimpath $WORK/b004 -p errors -std -complete -buildid aLPU2uQV-s9G1YSz8ZVw/aLPU2uQV-s9G1YSz8ZVw -goversion go1.12.6 -D "" -importcfg $WORK/b004/importcfg -pack -c=4 ./errors.go
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/race
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b019/_pkg_.a -trimpath $WORK/b019 -p internal/race -std -complete -buildid 5ApuCV99OlUIFjgVacFK/5ApuCV99OlUIFjgVacFK -goversion go1.12.6 -D "" -importcfg $WORK/b019/importcfg -pack -c=4 ./doc.go ./norace.go
+unicode/utf8
+mkdir -p $WORK/b017/
+sync/atomic
+mkdir -p $WORK/b020/
+runtime/internal/sys
+mkdir -p $WORK/b015/
+cat >$WORK/b017/importcfg << 'EOF' # internal
+# import config
+EOF
+cat >$WORK/b020/go_asm.h << 'EOF' # internal
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/unicode/utf8
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b017/_pkg_.a -trimpath $WORK/b017 -p unicode/utf8 -std -complete -buildid O2BUib01GUDTw1PemgwY/O2BUib01GUDTw1PemgwY -goversion go1.12.6 -D "" -importcfg $WORK/b017/importcfg -pack -c=4 ./utf8.go
+cd /usr/local/Cellar/go/1.12.6/libexec/src/sync/atomic
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b020 -I $WORK/b020/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b020/symabis ./asm.s
+cat >$WORK/b015/importcfg << 'EOF' # internal
+# import config
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/internal/sys
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b015/_pkg_.a -trimpath $WORK/b015 -p runtime/internal/sys -std -+ -complete -buildid 91IAzPD_zQORXwAi7SEE/91IAzPD_zQORXwAi7SEE -goversion go1.12.6 -D "" -importcfg $WORK/b015/importcfg -pack -c=4 ./arch.go ./arch_amd64.go ./intrinsics.go ./stubs.go ./sys.go ./zgoarch_amd64.go ./zgoos_darwin.go ./zversion.go
+internal/cpu
+mkdir -p $WORK/b008/
+runtime/internal/atomic
+mkdir -p $WORK/b013/
+cat >$WORK/b008/go_asm.h << 'EOF' # internal
+EOF
+cat >$WORK/b013/go_asm.h << 'EOF' # internal
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/internal/atomic
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b013 -I $WORK/b013/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b013/symabis ./asm_amd64.s
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/cpu
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b008 -I $WORK/b008/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b008/symabis ./cpu_x86.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b004/_pkg_.a # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b019/_pkg_.a # internal
+cat >$WORK/b020/importcfg << 'EOF' # internal
+# import config
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/sync/atomic
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b020/_pkg_.a -trimpath $WORK/b020 -p sync/atomic -std -buildid JL5M_qcMg2mYMWkmVXQy/JL5M_qcMg2mYMWkmVXQy -goversion go1.12.6 -symabis $WORK/b020/symabis -D "" -importcfg $WORK/b020/importcfg -pack -asmhdr $WORK/b020/go_asm.h -c=4 ./doc.go ./value.go
+cp $WORK/b004/_pkg_.a /Users/tristian/Library/Caches/go-build/80/809abdea28bb60dd4745a50fc1291d4d840635e14305a444d474ec6514dc5e1e-d # internal
+cp $WORK/b019/_pkg_.a /Users/tristian/Library/Caches/go-build/77/771fe5fa28ee0bc2215833590540fc09bb014481427ed31c3fc7aa685074e074-d # internal
+cat >$WORK/b013/go_asm.h << 'EOF' # internal
+EOF
+cat >$WORK/b008/importcfg << 'EOF' # internal
+# import config
+EOF
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b013 -I $WORK/b013/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b013/symabis2 ./asm.s
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/cpu
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b008/_pkg_.a -trimpath $WORK/b008 -p internal/cpu -std -+ -buildid zGm-qwzegih8SQk8DBNe/zGm-qwzegih8SQk8DBNe -goversion go1.12.6 -symabis $WORK/b008/symabis -D "" -importcfg $WORK/b008/importcfg -pack -asmhdr $WORK/b008/go_asm.h -c=4 ./cpu.go ./cpu_amd64.go ./cpu_x86.go
+unicode
+mkdir -p $WORK/b021/
+cat >$WORK/b021/importcfg << 'EOF' # internal
+# import config
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/unicode
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b021/_pkg_.a -trimpath $WORK/b021 -p unicode -std -complete -buildid 9wtbkGmhNoLu18ovaWLu/9wtbkGmhNoLu18ovaWLu -goversion go1.12.6 -D "" -importcfg $WORK/b021/importcfg -pack -c=4 ./casetables.go ./digit.go ./graphic.go ./letter.go ./tables.go
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b009/_pkg_.a # internal
+cp $WORK/b009/_pkg_.a /Users/tristian/Library/Caches/go-build/31/316038f7a42024a94cdc9122909f0b3f2f1c98d70f2b5c11fcb201db2e24323e-d # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b015/_pkg_.a # internal
+runtime/cgo
+mkdir -p $WORK/b031/
+cp $WORK/b015/_pkg_.a /Users/tristian/Library/Caches/go-build/eb/ebeb7f0d3c39e46583e441f3b7078706180924342211caf8c28b42190386c3a7-d # internal
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/cgo
+CGO_LDFLAGS='"-g" "-O2" "-lpthread"' /usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/cgo -objdir $WORK/b031/ -importpath runtime/cgo -import_runtime_cgo=false -import_syscall=false -- -I $WORK/b031/ -g -O2 -Wall -Werror ./cgo.go
+runtime/internal/math
+mkdir -p $WORK/b014/
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b017/_pkg_.a # internal
+cat >$WORK/b014/importcfg << 'EOF' # internal
+# import config
+packagefile runtime/internal/sys=$WORK/b015/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/internal/math
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b014/_pkg_.a -trimpath $WORK/b014 -p runtime/internal/math -std -+ -complete -buildid _vVSWU6R-5a7nLGdZHGp/_vVSWU6R-5a7nLGdZHGp -goversion go1.12.6 -D "" -importcfg $WORK/b014/importcfg -pack -c=4 ./math.go
+cd /usr/local/Cellar/go/1.12.6/libexec/src/sync/atomic
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b020 -I $WORK/b020/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b020/asm.o ./asm.s
+cat >>$WORK/b013/symabis << 'EOF' # internal
+ref runtime/internal/atomic.Xchg ABI0
+ref runtime/internal/atomic.Xchg ABI0
+ref runtime/internal/atomic.Xchg64 ABI0
+ref runtime/internal/atomic.Xchg64 ABI0
+ref runtime/internal/atomic.Xchguintptr ABI0
+ref runtime/internal/atomic.Cas ABI0
+ref runtime/internal/atomic.Cas ABI0
+ref runtime/internal/atomic.Casuintptr ABI0
+ref runtime/internal/atomic.Cas64 ABI0
+ref runtime/internal/atomic.Cas64 ABI0
+ref runtime/internal/atomic.Xadd ABI0
+ref runtime/internal/atomic.Xadd ABI0
+ref runtime/internal/atomic.Xadduintptr ABI0
+ref runtime/internal/atomic.Xadd64 ABI0
+ref runtime/internal/atomic.Xadd64 ABI0
+ref runtime/internal/atomic.Load ABI0
+ref runtime/internal/atomic.Load ABI0
+ref runtime/internal/atomic.Load64 ABI0
+ref runtime/internal/atomic.Load64 ABI0
+ref runtime/internal/atomic.Loaduintptr ABI0
+ref runtime/internal/atomic.Loadp ABI0
+ref runtime/internal/atomic.Store ABI0
+ref runtime/internal/atomic.Store ABI0
+ref runtime/internal/atomic.Store64 ABI0
+ref runtime/internal/atomic.Store64 ABI0
+ref runtime/internal/atomic.Storeuintptr ABI0
+EOF
+cat >$WORK/b013/importcfg << 'EOF' # internal
+# import config
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/internal/atomic
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b013/_pkg_.a -trimpath $WORK/b013 -p runtime/internal/atomic -std -+ -buildid 1_VcHIT8j375T4Ap45Ew/1_VcHIT8j375T4Ap45Ew -goversion go1.12.6 -symabis $WORK/b013/symabis -D "" -importcfg $WORK/b013/importcfg -pack -asmhdr $WORK/b013/go_asm.h -c=4 ./atomic_amd64x.go ./stubs.go
+cp $WORK/b017/_pkg_.a /Users/tristian/Library/Caches/go-build/38/383095d0c2e25ffd65553a6bdbded9d89b34eea9f1428ca136fa0729ca7614ad-d # internal
+cd /usr/local/Cellar/go/1.12.6/libexec/src/sync/atomic
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/pack r $WORK/b020/_pkg_.a $WORK/b020/asm.o # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b020/_pkg_.a # internal
+cp $WORK/b020/_pkg_.a /Users/tristian/Library/Caches/go-build/b5/b5938e93dfe7a7aebc04d21afb10907e682c6d12179a93a2fe8a624fd2de0fae-d # internal
+internal/testlog
+mkdir -p $WORK/b029/
+cat >$WORK/b029/importcfg << 'EOF' # internal
+# import config
+packagefile sync/atomic=$WORK/b020/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/testlog
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b029/_pkg_.a -trimpath $WORK/b029 -p internal/testlog -std -complete -buildid Rjl9crKQMxsTgCS-FHr4/Rjl9crKQMxsTgCS-FHr4 -goversion go1.12.6 -D "" -importcfg $WORK/b029/importcfg -pack -c=4 ./log.go
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/cpu
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b008 -I $WORK/b008/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b008/cpu_x86.o ./cpu_x86.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b014/_pkg_.a # internal
+cp $WORK/b014/_pkg_.a /Users/tristian/Library/Caches/go-build/00/0054f2f5d8bcc9f05c8024c651859655c32b55333804de3c779f140b16173b1b-d # internal
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/internal/atomic
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b013 -I $WORK/b013/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b013/asm_amd64.o ./asm_amd64.s
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/cpu
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/pack r $WORK/b008/_pkg_.a $WORK/b008/cpu_x86.o # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b008/_pkg_.a # internal
+cp $WORK/b008/_pkg_.a /Users/tristian/Library/Caches/go-build/fa/fa0f4b70f7f6ecdbc6ac5e0b0391b19149fdffbc5ee7e2d48d39fbd7ebe98ad4-d # internal
+internal/bytealg
+mkdir -p $WORK/b012/
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/internal/atomic
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/pack r $WORK/b013/_pkg_.a $WORK/b013/asm_amd64.o # internal
+cat >$WORK/b012/go_asm.h << 'EOF' # internal
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/bytealg
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b012 -I $WORK/b012/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b012/symabis ./compare_amd64.s ./count_amd64.s ./equal_amd64.s ./index_amd64.s ./indexbyte_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b013/_pkg_.a # internal
+cp $WORK/b013/_pkg_.a /Users/tristian/Library/Caches/go-build/c2/c276f82489189f7f2ea22bf1cc9ac89ce851e48277af273ef5cd0f697fc598b6-d # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b029/_pkg_.a # internal
+math
+mkdir -p $WORK/b007/
+cp $WORK/b029/_pkg_.a /Users/tristian/Library/Caches/go-build/dc/dc6dedd7b67d2460626f6a1460068051d23fe6c223e46fb36963a679d0ea40b1-d # internal
+cat >$WORK/b007/go_asm.h << 'EOF' # internal
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/math
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b007/symabis ./asin_amd64.s ./asinh_stub.s ./atan2_amd64.s ./atan_amd64.s ./cbrt_stub.s ./dim_amd64.s ./erf_stub.s ./exp2_amd64.s ./exp_amd64.s ./expm1_amd64.s ./floor_amd64.s ./frexp_amd64.s ./hypot_amd64.s ./ldexp_amd64.s ./log10_amd64.s ./log1p_amd64.s ./log_amd64.s ./mod_amd64.s ./modf_amd64.s ./pow_stub.s ./remainder_amd64.s ./sin_amd64.s ./sinh_stub.s ./sqrt_amd64.s ./tan_amd64.s
+cd $WORK
+clang -fno-caret-diagnostics -c -x c - || true
+cat >$WORK/b012/importcfg << 'EOF' # internal
+# import config
+packagefile internal/cpu=$WORK/b008/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/bytealg
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b012/_pkg_.a -trimpath $WORK/b012 -p internal/bytealg -std -+ -buildid 17Hv2sKH5hrg151f7c5A/17Hv2sKH5hrg151f7c5A -goversion go1.12.6 -symabis $WORK/b012/symabis -D "" -importcfg $WORK/b012/importcfg -pack -asmhdr $WORK/b012/go_asm.h -c=4 ./bytealg.go ./compare_native.go ./count_native.go ./equal_native.go ./index_amd64.go ./index_native.go ./indexbyte_native.go
+cat >$WORK/b007/importcfg << 'EOF' # internal
+# import config
+packagefile internal/cpu=$WORK/b008/_pkg_.a
+packagefile math/bits=$WORK/b009/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/math
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b007/_pkg_.a -trimpath $WORK/b007 -p math -std -buildid X3wMG-b0shZgNaw0LEUj/X3wMG-b0shZgNaw0LEUj -goversion go1.12.6 -symabis $WORK/b007/symabis -D "" -importcfg $WORK/b007/importcfg -pack -asmhdr $WORK/b007/go_asm.h -c=4 ./abs.go ./acosh.go ./asin.go ./asinh.go ./atan.go ./atan2.go ./atanh.go ./bits.go ./cbrt.go ./const.go ./copysign.go ./dim.go ./erf.go ./erfinv.go ./exp.go ./exp_asm.go ./expm1.go ./floor.go ./frexp.go ./gamma.go ./hypot.go ./j0.go ./j1.go ./jn.go ./ldexp.go ./lgamma.go ./log.go ./log10.go ./log1p.go ./logb.go ./mod.go ./modf.go ./nextafter.go ./pow.go ./pow10.go ./remainder.go ./signbit.go ./sin.go ./sincos.go ./sinh.go ./sqrt.go ./tan.go ./tanh.go ./trig_reduce.go ./unsafe.go
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/bytealg
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b012 -I $WORK/b012/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b012/compare_amd64.o ./compare_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b012 -I $WORK/b012/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b012/count_amd64.o ./count_amd64.s
+cd $WORK
+clang -Qunused-arguments -c -x c - || true
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/bytealg
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b012 -I $WORK/b012/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b012/equal_amd64.o ./equal_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b012 -I $WORK/b012/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b012/index_amd64.o ./index_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b012 -I $WORK/b012/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b012/indexbyte_amd64.o ./indexbyte_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/pack r $WORK/b012/_pkg_.a $WORK/b012/compare_amd64.o $WORK/b012/count_amd64.o $WORK/b012/equal_amd64.o $WORK/b012/index_amd64.o $WORK/b012/indexbyte_amd64.o # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b012/_pkg_.a # internal
+cd $WORK
+clang -fdebug-prefix-map=a=b -c -x c - || true
+cp $WORK/b012/_pkg_.a /Users/tristian/Library/Caches/go-build/82/82d3e4c81d0d227b618905217ac93d483ab630b099d90bbade31851d131b76e6-d # internal
+clang -gno-record-gcc-switches -c -x c - || true
+cd /usr/local/Cellar/go/1.12.6/libexec/src/math
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/asin_amd64.o ./asin_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b021/_pkg_.a # internal
+cp $WORK/b021/_pkg_.a /Users/tristian/Library/Caches/go-build/90/90e4fc6b1581e3bfe8671d778547d447531210de7ce4791cd4e458c7984b3a71-d # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/asinh_stub.o ./asinh_stub.s
+cd $WORK/b031
+TERM='dumb' clang -I /usr/local/Cellar/go/1.12.6/libexec/src/runtime/cgo -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b031=/tmp/go-build -gno-record-gcc-switches -fno-common -I ./ -g -O2 -Wall -Werror -o ./_x001.o -c _cgo_export.c
+cd /usr/local/Cellar/go/1.12.6/libexec/src/math
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/atan2_amd64.o ./atan2_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/atan_amd64.o ./atan_amd64.s
+runtime
+mkdir -p $WORK/b011/
+cat >$WORK/b011/go_asm.h << 'EOF' # internal
+EOF
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/cbrt_stub.o ./cbrt_stub.s
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b011 -I $WORK/b011/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b011/symabis ./asm.s ./asm_amd64.s ./duff_amd64.s ./memclr_amd64.s ./memmove_amd64.s ./rt0_darwin_amd64.s ./sys_darwin_amd64.s
+cd /usr/local/Cellar/go/1.12.6/libexec/src/math
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/dim_amd64.o ./dim_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/erf_stub.o ./erf_stub.s
+cat >$WORK/b011/go_asm.h << 'EOF' # internal
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/syscall
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b011 -I $WORK/b011/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b011/symabis2 ./asm_darwin_amd64.s ./zsyscall_darwin_amd64.s
+cd /usr/local/Cellar/go/1.12.6/libexec/src/math
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/exp2_amd64.o ./exp2_amd64.s
+cat >>$WORK/b011/symabis << 'EOF' # internal
+ref runtime.entersyscall ABI0
+ref runtime.exitsyscall ABI0
+ref runtime.exitsyscall ABI0
+ref runtime.entersyscall ABI0
+ref runtime.exitsyscall ABI0
+ref runtime.exitsyscall ABI0
+ref runtime.entersyscall ABI0
+ref runtime.exitsyscall ABI0
+ref runtime.exitsyscall ABI0
+ref libc_getattrlist ABI0
+ref libc_getfsstat64 ABI0
+ref libc_setattrlist ABI0
+ref libc_sendfile ABI0
+ref libc_getgroups ABI0
+ref libc_setgroups ABI0
+ref libc_wait4 ABI0
+ref libc_accept ABI0
+ref libc_bind ABI0
+ref libc_connect ABI0
+ref libc_socket ABI0
+ref libc_getsockopt ABI0
+ref libc_setsockopt ABI0
+ref libc_getpeername ABI0
+ref libc_getsockname ABI0
+ref libc_shutdown ABI0
+ref libc_socketpair ABI0
+ref libc_recvfrom ABI0
+ref libc_sendto ABI0
+ref libc_recvmsg ABI0
+ref libc_sendmsg ABI0
+ref libc_kevent ABI0
+ref libc_utimes ABI0
+ref libc_futimes ABI0
+ref libc_fcntl ABI0
+ref libc_ptrace ABI0
+ref libc_pipe ABI0
+ref libc_kill ABI0
+ref libc_access ABI0
+ref libc_adjtime ABI0
+ref libc_chdir ABI0
+ref libc_chflags ABI0
+ref libc_chmod ABI0
+ref libc_chown ABI0
+ref libc_chroot ABI0
+ref libc_close ABI0
+ref libc_dup ABI0
+ref libc_dup2 ABI0
+ref libc_exchangedata ABI0
+ref libc_fchdir ABI0
+ref libc_fchflags ABI0
+ref libc_fchmod ABI0
+ref libc_fchown ABI0
+ref libc_flock ABI0
+ref libc_fpathconf ABI0
+ref libc_fsync ABI0
+ref libc_ftruncate ABI0
+ref libc_getdtablesize ABI0
+ref libc_getegid ABI0
+ref libc_geteuid ABI0
+ref libc_getgid ABI0
+ref libc_getpgid ABI0
+ref libc_getpgrp ABI0
+ref libc_getpid ABI0
+ref libc_getppid ABI0
+ref libc_getpriority ABI0
+ref libc_getrlimit ABI0
+ref libc_getrusage ABI0
+ref libc_getsid ABI0
+ref libc_getuid ABI0
+ref libc_issetugid ABI0
+ref libc_kqueue ABI0
+ref libc_lchown ABI0
+ref libc_link ABI0
+ref libc_listen ABI0
+ref libc_mkdir ABI0
+ref libc_mkfifo ABI0
+ref libc_mknod ABI0
+ref libc_mlock ABI0
+ref libc_mlockall ABI0
+ref libc_mprotect ABI0
+ref libc_munlock ABI0
+ref libc_munlockall ABI0
+ref libc_open ABI0
+ref libc_pathconf ABI0
+ref libc_pread ABI0
+ref libc_pwrite ABI0
+ref libc_read ABI0
+ref libc_readlink ABI0
+ref libc_rename ABI0
+ref libc_revoke ABI0
+ref libc_rmdir ABI0
+ref libc_lseek ABI0
+ref libc_select ABI0
+ref libc_setegid ABI0
+ref libc_seteuid ABI0
+ref libc_setgid ABI0
+ref libc_setlogin ABI0
+ref libc_setpgid ABI0
+ref libc_setpriority ABI0
+ref libc_setprivexec ABI0
+ref libc_setregid ABI0
+ref libc_setreuid ABI0
+ref libc_setrlimit ABI0
+ref libc_setsid ABI0
+ref libc_settimeofday ABI0
+ref libc_setuid ABI0
+ref libc_symlink ABI0
+ref libc_sync ABI0
+ref libc_truncate ABI0
+ref libc_umask ABI0
+ref libc_undelete ABI0
+ref libc_unlink ABI0
+ref libc_unmount ABI0
+ref libc_write ABI0
+ref libc_writev ABI0
+ref libc_mmap ABI0
+ref libc_munmap ABI0
+ref libc_fork ABI0
+ref libc_ioctl ABI0
+ref libc_execve ABI0
+ref libc_exit ABI0
+ref libc_sysctl ABI0
+ref libc_unlinkat ABI0
+ref libc_openat ABI0
+ref libc_fstat64 ABI0
+ref libc_fstatfs64 ABI0
+ref libc___getdirentries64 ABI0
+ref libc_gettimeofday ABI0
+ref libc_lstat64 ABI0
+ref libc_stat64 ABI0
+ref libc_statfs64 ABI0
+ref libc_fstatat64 ABI0
+EOF
+cat >$WORK/b011/go_asm.h << 'EOF' # internal
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/cgo
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b011 -I $WORK/b011/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b011/symabis2 ./asm_amd64.s
+cd /usr/local/Cellar/go/1.12.6/libexec/src/math
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/exp_amd64.o ./exp_amd64.s
+cat >$WORK/b011/importcfg << 'EOF' # internal
+# import config
+packagefile internal/bytealg=$WORK/b012/_pkg_.a
+packagefile internal/cpu=$WORK/b008/_pkg_.a
+packagefile runtime/internal/atomic=$WORK/b013/_pkg_.a
+packagefile runtime/internal/math=$WORK/b014/_pkg_.a
+packagefile runtime/internal/sys=$WORK/b015/_pkg_.a
+EOF
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/expm1_amd64.o ./expm1_amd64.s
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b011/_pkg_.a -trimpath $WORK/b011 -p runtime -std -+ -buildid ay883apkJVSIsvPebNZM/ay883apkJVSIsvPebNZM -goversion go1.12.6 -symabis $WORK/b011/symabis -D "" -importcfg $WORK/b011/importcfg -pack -asmhdr $WORK/b011/go_asm.h -c=4 ./alg.go ./atomic_pointer.go ./cgo.go ./cgocall.go ./cgocallback.go ./cgocheck.go ./chan.go ./compiler.go ./complex.go ./cpuflags.go ./cpuflags_amd64.go ./cpuprof.go ./cputicks.go ./debug.go ./debugcall.go ./defs_darwin_amd64.go ./env_posix.go ./error.go ./extern.go ./fastlog2.go ./fastlog2table.go ./float.go ./hash64.go ./heapdump.go ./iface.go ./lfstack.go ./lfstack_64bit.go ./lock_sema.go ./malloc.go ./map.go ./map_fast32.go ./map_fast64.go ./map_faststr.go ./mbarrier.go ./mbitmap.go ./mcache.go ./mcentral.go ./mem_bsd.go ./mfinal.go ./mfixalloc.go ./mgc.go ./mgclarge.go ./mgcmark.go ./mgcstack.go ./mgcsweep.go ./mgcsweepbuf.go ./mgcwork.go ./mheap.go ./mprof.go ./msan0.go ./msize.go ./mstats.go ./mwbbuf.go ./netpoll.go ./netpoll_kqueue.go ./os_darwin.go ./os_nonopenbsd.go ./panic.go ./plugin.go ./print.go ./proc.go ./profbuf.go ./proflabel.go ./race0.go ./rdebug.go ./relax_stub.go ./runtime.go ./runtime1.go ./runtime2.go ./rwmutex.go ./select.go ./sema.go ./signal_amd64x.go ./signal_darwin.go ./signal_darwin_amd64.go ./signal_sighandler.go ./signal_unix.go ./sigqueue.go ./sizeclasses.go ./slice.go ./softfloat64.go ./stack.go ./string.go ./stubs.go ./stubs_nonlinux.go ./stubs_x86.go ./symtab.go ./sys_darwin.go ./sys_darwin_64.go ./sys_nonppc64x.go ./sys_x86.go ./time.go ./timestub.go ./trace.go ./traceback.go ./type.go ./typekind.go ./unaligned1.go ./utf8.go ./vdso_in_none.go ./write_err.go
+cd $WORK/b031
+TERM='dumb' clang -I /usr/local/Cellar/go/1.12.6/libexec/src/runtime/cgo -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b031=/tmp/go-build -gno-record-gcc-switches -fno-common -I ./ -g -O2 -Wall -Werror -o ./_x002.o -c cgo.cgo2.c
+cd /usr/local/Cellar/go/1.12.6/libexec/src/math
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/floor_amd64.o ./floor_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/frexp_amd64.o ./frexp_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/hypot_amd64.o ./hypot_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/ldexp_amd64.o ./ldexp_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/log10_amd64.o ./log10_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/log1p_amd64.o ./log1p_amd64.s
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/cgo
+TERM='dumb' clang -I . -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b031=/tmp/go-build -gno-record-gcc-switches -fno-common -I $WORK/b031/ -g -O2 -Wall -Werror -o $WORK/b031/_x003.o -c gcc_context.c
+cd /usr/local/Cellar/go/1.12.6/libexec/src/math
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/log_amd64.o ./log_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/mod_amd64.o ./mod_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/modf_amd64.o ./modf_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/pow_stub.o ./pow_stub.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/remainder_amd64.o ./remainder_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/sin_amd64.o ./sin_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/sinh_stub.o ./sinh_stub.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/sqrt_amd64.o ./sqrt_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b007 -I $WORK/b007/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b007/tan_amd64.o ./tan_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/pack r $WORK/b007/_pkg_.a $WORK/b007/asin_amd64.o $WORK/b007/asinh_stub.o $WORK/b007/atan2_amd64.o $WORK/b007/atan_amd64.o $WORK/b007/cbrt_stub.o $WORK/b007/dim_amd64.o $WORK/b007/erf_stub.o $WORK/b007/exp2_amd64.o $WORK/b007/exp_amd64.o $WORK/b007/expm1_amd64.o $WORK/b007/floor_amd64.o $WORK/b007/frexp_amd64.o $WORK/b007/hypot_amd64.o $WORK/b007/ldexp_amd64.o $WORK/b007/log10_amd64.o $WORK/b007/log1p_amd64.o $WORK/b007/log_amd64.o $WORK/b007/mod_amd64.o $WORK/b007/modf_amd64.o $WORK/b007/pow_stub.o $WORK/b007/remainder_amd64.o $WORK/b007/sin_amd64.o $WORK/b007/sinh_stub.o $WORK/b007/sqrt_amd64.o $WORK/b007/tan_amd64.o # internal
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/cgo
+TERM='dumb' clang -I . -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b031=/tmp/go-build -gno-record-gcc-switches -fno-common -I $WORK/b031/ -g -O2 -Wall -Werror -o $WORK/b031/_x004.o -c gcc_darwin_amd64.c
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b007/_pkg_.a # internal
+cp $WORK/b007/_pkg_.a /Users/tristian/Library/Caches/go-build/a6/a660274546b7f0679eefea9aa212475de1f578c56a42f27d119167df50b7fe56-d # internal
+strconv
+mkdir -p $WORK/b016/
+cat >$WORK/b016/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$WORK/b004/_pkg_.a
+packagefile internal/bytealg=$WORK/b012/_pkg_.a
+packagefile math=$WORK/b007/_pkg_.a
+packagefile math/bits=$WORK/b009/_pkg_.a
+packagefile unicode/utf8=$WORK/b017/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/strconv
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b016/_pkg_.a -trimpath $WORK/b016 -p strconv -std -complete -buildid GjlYaBj8Pjl1_MqOh6LN/GjlYaBj8Pjl1_MqOh6LN -goversion go1.12.6 -D "" -importcfg $WORK/b016/importcfg -pack -c=4 ./atob.go ./atof.go ./atoi.go ./decimal.go ./doc.go ./extfloat.go ./ftoa.go ./isprint.go ./itoa.go ./quote.go
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/cgo
+TERM='dumb' clang -I . -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b031=/tmp/go-build -gno-record-gcc-switches -fno-common -I $WORK/b031/ -g -O2 -Wall -Werror -o $WORK/b031/_x005.o -c gcc_libinit.c
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b016/_pkg_.a # internal
+cp $WORK/b016/_pkg_.a /Users/tristian/Library/Caches/go-build/d7/d7803af8ed1f7a65d7c20f4a9eaa64884ffb69d09e685f95aee0d2bcb5f7a992-d # internal
+TERM='dumb' clang -I . -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b031=/tmp/go-build -gno-record-gcc-switches -fno-common -I $WORK/b031/ -g -O2 -Wall -Werror -o $WORK/b031/_x006.o -c gcc_setenv.c
+TERM='dumb' clang -I . -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b031=/tmp/go-build -gno-record-gcc-switches -fno-common -I $WORK/b031/ -g -O2 -Wall -Werror -o $WORK/b031/_x007.o -c gcc_traceback.c
+TERM='dumb' clang -I . -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b031=/tmp/go-build -gno-record-gcc-switches -fno-common -I $WORK/b031/ -g -O2 -Wall -Werror -o $WORK/b031/_x008.o -c gcc_util.c
+TERM='dumb' clang -I . -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b031=/tmp/go-build -gno-record-gcc-switches -fno-common -I $WORK/b031/ -g -O2 -Wall -Werror -o $WORK/b031/_x009.o -c gcc_amd64.S
+cd $WORK/b031
+TERM='dumb' clang -I /usr/local/Cellar/go/1.12.6/libexec/src/runtime/cgo -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b031=/tmp/go-build -gno-record-gcc-switches -fno-common -I ./ -g -O2 -Wall -Werror -o ./_cgo_main.o -c _cgo_main.c
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime/cgo
+TERM='dumb' clang -I . -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b031=/tmp/go-build -gno-record-gcc-switches -fno-common -o $WORK/b031/_cgo_.o $WORK/b031/_cgo_main.o $WORK/b031/_x001.o $WORK/b031/_x002.o $WORK/b031/_x003.o $WORK/b031/_x004.o $WORK/b031/_x005.o $WORK/b031/_x006.o $WORK/b031/_x007.o $WORK/b031/_x008.o $WORK/b031/_x009.o -g -O2 -lpthread
+TERM='dumb' /usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/cgo -dynpackage cgo -dynimport $WORK/b031/_cgo_.o -dynout $WORK/b031/_cgo_import.go -dynlinker
+cat >$WORK/b031/go_asm.h << 'EOF' # internal
+EOF
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b031 -I $WORK/b031/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b031/symabis ./asm_amd64.s
+cat >$WORK/b031/importcfg << 'EOF' # internal
+# import config
+EOF
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b031/_pkg_.a -trimpath $WORK/b031 -p runtime/cgo -std -buildid 86tDFhOwFaJ-TfjlzphI/86tDFhOwFaJ-TfjlzphI -goversion go1.12.6 -symabis $WORK/b031/symabis -D "" -importcfg $WORK/b031/importcfg -pack -asmhdr $WORK/b031/go_asm.h -c=4 ./callbacks.go ./callbacks_traceback.go ./iscgo.go ./setenv.go $WORK/b031/_cgo_gotypes.go $WORK/b031/cgo.cgo1.go $WORK/b031/_cgo_import.go
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b031 -I $WORK/b031/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b031/asm_amd64.o ./asm_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/pack r $WORK/b031/_pkg_.a $WORK/b031/asm_amd64.o $WORK/b031/_x001.o $WORK/b031/_x002.o $WORK/b031/_x003.o $WORK/b031/_x004.o $WORK/b031/_x005.o $WORK/b031/_x006.o $WORK/b031/_x007.o $WORK/b031/_x008.o $WORK/b031/_x009.o # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b031/_pkg_.a # internal
+cp $WORK/b031/_pkg_.a /Users/tristian/Library/Caches/go-build/a8/a817f09c25b293626766bb99110dc170a27cc9984105a6228fe67407c80b4b98-d # internal
+cd /usr/local/Cellar/go/1.12.6/libexec/src/runtime
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b011 -I $WORK/b011/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b011/asm.o ./asm.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b011 -I $WORK/b011/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b011/asm_amd64.o ./asm_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b011 -I $WORK/b011/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b011/duff_amd64.o ./duff_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b011 -I $WORK/b011/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b011/memclr_amd64.o ./memclr_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b011 -I $WORK/b011/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b011/memmove_amd64.o ./memmove_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b011 -I $WORK/b011/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b011/rt0_darwin_amd64.o ./rt0_darwin_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b011 -I $WORK/b011/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b011/sys_darwin_amd64.o ./sys_darwin_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/pack r $WORK/b011/_pkg_.a $WORK/b011/asm.o $WORK/b011/asm_amd64.o $WORK/b011/duff_amd64.o $WORK/b011/memclr_amd64.o $WORK/b011/memmove_amd64.o $WORK/b011/rt0_darwin_amd64.o $WORK/b011/sys_darwin_amd64.o # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b011/_pkg_.a # internal
+cp $WORK/b011/_pkg_.a /Users/tristian/Library/Caches/go-build/c9/c91d98429db402241e2c613319c09186fdcc1e83fe04931e51fb1f19175ac04d-d # internal
+sync
+mkdir -p $WORK/b018/
+cat >$WORK/b018/importcfg << 'EOF' # internal
+# import config
+packagefile internal/race=$WORK/b019/_pkg_.a
+packagefile runtime=$WORK/b011/_pkg_.a
+packagefile sync/atomic=$WORK/b020/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/sync
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b018/_pkg_.a -trimpath $WORK/b018 -p sync -std -buildid _AiOliggAYomu4bpccJb/_AiOliggAYomu4bpccJb -goversion go1.12.6 -D "" -importcfg $WORK/b018/importcfg -pack -c=4 ./cond.go ./map.go ./mutex.go ./once.go ./pool.go ./runtime.go ./rwmutex.go ./waitgroup.go
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b018/_pkg_.a # internal
+cp $WORK/b018/_pkg_.a /Users/tristian/Library/Caches/go-build/da/dadc15d6609f071072c4188c9fea7d040550a5a25512d0011a077feb20c8a524-d # internal
+io
+mkdir -p $WORK/b023/
+cat >$WORK/b023/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$WORK/b004/_pkg_.a
+packagefile sync=$WORK/b018/_pkg_.a
+packagefile sync/atomic=$WORK/b020/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/io
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b023/_pkg_.a -trimpath $WORK/b023 -p io -std -complete -buildid nnsy8Gr0ea1Y1gW2agrl/nnsy8Gr0ea1Y1gW2agrl -goversion go1.12.6 -D "" -importcfg $WORK/b023/importcfg -pack -c=4 ./io.go ./multi.go ./pipe.go
+reflect
+mkdir -p $WORK/b006/
+cat >$WORK/b006/go_asm.h << 'EOF' # internal
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/reflect
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b006 -I $WORK/b006/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b006/symabis ./asm_amd64.s
+syscall
+mkdir -p $WORK/b026/
+cat >$WORK/b026/go_asm.h << 'EOF' # internal
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/syscall
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b026 -I $WORK/b026/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -gensymabis -o $WORK/b026/symabis ./asm_darwin_amd64.s ./zsyscall_darwin_amd64.s
+cat >$WORK/b006/importcfg << 'EOF' # internal
+# import config
+packagefile math=$WORK/b007/_pkg_.a
+packagefile runtime=$WORK/b011/_pkg_.a
+packagefile strconv=$WORK/b016/_pkg_.a
+packagefile sync=$WORK/b018/_pkg_.a
+packagefile unicode=$WORK/b021/_pkg_.a
+packagefile unicode/utf8=$WORK/b017/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/reflect
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b006/_pkg_.a -trimpath $WORK/b006 -p reflect -std -buildid SQqOe3i2D-B3iTJL7dGt/SQqOe3i2D-B3iTJL7dGt -goversion go1.12.6 -symabis $WORK/b006/symabis -D "" -importcfg $WORK/b006/importcfg -pack -asmhdr $WORK/b006/go_asm.h -c=4 ./deepequal.go ./makefunc.go ./swapper.go ./type.go ./value.go
+cat >$WORK/b026/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$WORK/b004/_pkg_.a
+packagefile internal/race=$WORK/b019/_pkg_.a
+packagefile runtime=$WORK/b011/_pkg_.a
+packagefile sync=$WORK/b018/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/syscall
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b026/_pkg_.a -trimpath $WORK/b026 -p syscall -std -buildid 7C-KI7ZnGb3W_duXkxEy/7C-KI7ZnGb3W_duXkxEy -goversion go1.12.6 -symabis $WORK/b026/symabis -D "" -importcfg $WORK/b026/importcfg -pack -asmhdr $WORK/b026/go_asm.h -c=4 ./bpf_darwin.go ./dirent.go ./endian_little.go ./env_unix.go ./exec_darwin.go ./exec_unix.go ./flock_darwin.go ./forkpipe.go ./msan0.go ./net.go ./route_bsd.go ./route_darwin.go ./sockcmsg_unix.go ./str.go ./syscall.go ./syscall_bsd.go ./syscall_darwin.go ./syscall_darwin_amd64.go ./syscall_unix.go ./timestruct.go ./zerrors_darwin_amd64.go ./zsyscall_darwin_amd64.go ./zsysnum_darwin_amd64.go ./ztypes_darwin_amd64.go
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b023/_pkg_.a # internal
+cp $WORK/b023/_pkg_.a /Users/tristian/Library/Caches/go-build/49/492bb3a0676eaa9e9800c6e30578cf6ea9d62f196cb8556f5c69e811808743d9-d # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b026 -I $WORK/b026/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b026/asm_darwin_amd64.o ./asm_darwin_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b026 -I $WORK/b026/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b026/zsyscall_darwin_amd64.o ./zsyscall_darwin_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/pack r $WORK/b026/_pkg_.a $WORK/b026/asm_darwin_amd64.o $WORK/b026/zsyscall_darwin_amd64.o # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b026/_pkg_.a # internal
+cp $WORK/b026/_pkg_.a /Users/tristian/Library/Caches/go-build/e0/e057193d005cf8f0f0f8701dec1b363f0180d6aba28e468f256bb9a7ab66f45d-d # internal
+github.com/triztian/my.special.library/sub-package
+internal/syscall/unix
+mkdir -p $WORK/b030/
+mkdir -p $WORK/b028/
+cd /Users/tristian/go/pkg/mod/github.com/triztian/my.special.library@v0.0.0-20190702005630-92faf8ca4418/sub-package
+CGO_LDFLAGS='"-g" "-O2"' /usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/cgo -objdir $WORK/b030/ -importpath github.com/triztian/my.special.library/sub-package -- -I $WORK/b030/ -g -O2 ./sum.go
+cat >$WORK/b028/importcfg << 'EOF' # internal
+# import config
+packagefile syscall=$WORK/b026/_pkg_.a
+EOF
+time
+mkdir -p $WORK/b027/
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/syscall/unix
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b028/_pkg_.a -trimpath $WORK/b028 -p internal/syscall/unix -std -complete -buildid OFLLTt8Hu2YDQql5EDGN/OFLLTt8Hu2YDQql5EDGN -goversion go1.12.6 -D "" -importcfg $WORK/b028/importcfg -pack -c=4 ./at_darwin.go ./at_sysnum_darwin.go ./nonblocking_darwin.go
+cat >$WORK/b027/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$WORK/b004/_pkg_.a
+packagefile runtime=$WORK/b011/_pkg_.a
+packagefile sync=$WORK/b018/_pkg_.a
+packagefile syscall=$WORK/b026/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/time
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b027/_pkg_.a -trimpath $WORK/b027 -p time -std -buildid zZyUxbE612I54zoO2uBC/zZyUxbE612I54zoO2uBC -goversion go1.12.6 -D "" -importcfg $WORK/b027/importcfg -pack -c=4 ./format.go ./sleep.go ./sys_unix.go ./tick.go ./time.go ./zoneinfo.go ./zoneinfo_read.go ./zoneinfo_unix.go
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b028/_pkg_.a # internal
+cp $WORK/b028/_pkg_.a /Users/tristian/Library/Caches/go-build/9f/9fdf9ab7da9e751d6172c08acc432acbc3fe356fd59ea783928d5cd2ee330518-d # internal
+cd /usr/local/Cellar/go/1.12.6/libexec/src/reflect
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/asm -trimpath $WORK/b006 -I $WORK/b006/ -I /usr/local/Cellar/go/1.12.6/libexec/pkg/include -D GOOS_darwin -D GOARCH_amd64 -o $WORK/b006/asm_amd64.o ./asm_amd64.s
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/pack r $WORK/b006/_pkg_.a $WORK/b006/asm_amd64.o # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b006/_pkg_.a # internal
+cp $WORK/b006/_pkg_.a /Users/tristian/Library/Caches/go-build/ea/ea0e186bdd3a866cc5b88bec889f58975ea556daa5757255514b78df224570b5-d # internal
+sort
+mkdir -p $WORK/b022/
+cat >$WORK/b022/importcfg << 'EOF' # internal
+# import config
+packagefile reflect=$WORK/b006/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/sort
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b022/_pkg_.a -trimpath $WORK/b022 -p sort -std -complete -buildid XN9zR5U-G-iw0EHMDWhI/XN9zR5U-G-iw0EHMDWhI -goversion go1.12.6 -D "" -importcfg $WORK/b022/importcfg -pack -c=4 ./search.go ./slice.go ./sort.go ./zfuncversion.go
+cd $WORK/b030
+TERM='dumb' clang -I /Users/tristian/go/pkg/mod/github.com/triztian/my.special.library@v0.0.0-20190702005630-92faf8ca4418/sub-package -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b030=/tmp/go-build -gno-record-gcc-switches -fno-common -I ./ -g -O2 -o ./_x001.o -c _cgo_export.c
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b027/_pkg_.a # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b022/_pkg_.a # internal
+cp $WORK/b022/_pkg_.a /Users/tristian/Library/Caches/go-build/e1/e111f3c71fd2c74a4a9f824b619cbbd97d0d3aaeef48978d4279bd78c9dabd56-d # internal
+internal/fmtsort
+mkdir -p $WORK/b005/
+cat >$WORK/b005/importcfg << 'EOF' # internal
+# import config
+packagefile reflect=$WORK/b006/_pkg_.a
+packagefile sort=$WORK/b022/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/fmtsort
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b005/_pkg_.a -trimpath $WORK/b005 -p internal/fmtsort -std -complete -buildid SNiBicjApvP0gqSWgp59/SNiBicjApvP0gqSWgp59 -goversion go1.12.6 -D "" -importcfg $WORK/b005/importcfg -pack -c=4 ./sort.go
+cp $WORK/b027/_pkg_.a /Users/tristian/Library/Caches/go-build/69/6911964b1b8d8a3e3531e36e1bcf3d47bf2078d68d52412a8997d3cbb26dd151-d # internal
+internal/poll
+mkdir -p $WORK/b025/
+cat >$WORK/b025/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$WORK/b004/_pkg_.a
+packagefile io=$WORK/b023/_pkg_.a
+packagefile runtime=$WORK/b011/_pkg_.a
+packagefile sync=$WORK/b018/_pkg_.a
+packagefile sync/atomic=$WORK/b020/_pkg_.a
+packagefile syscall=$WORK/b026/_pkg_.a
+packagefile time=$WORK/b027/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/internal/poll
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b025/_pkg_.a -trimpath $WORK/b025 -p internal/poll -std -buildid WnBjgqs50Ihe9LaEsljd/WnBjgqs50Ihe9LaEsljd -goversion go1.12.6 -D "" -importcfg $WORK/b025/importcfg -pack -c=4 ./fd.go ./fd_fsync_darwin.go ./fd_mutex.go ./fd_poll_runtime.go ./fd_posix.go ./fd_unix.go ./fd_writev_darwin.go ./hook_unix.go ./sockopt.go ./sockopt_unix.go ./sockoptip.go ./sys_cloexec.go ./writev.go
+cd $WORK/b030
+TERM='dumb' clang -I /Users/tristian/go/pkg/mod/github.com/triztian/my.special.library@v0.0.0-20190702005630-92faf8ca4418/sub-package -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b030=/tmp/go-build -gno-record-gcc-switches -fno-common -I ./ -g -O2 -o ./_x002.o -c sum.cgo2.c
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b005/_pkg_.a # internal
+cp $WORK/b005/_pkg_.a /Users/tristian/Library/Caches/go-build/6c/6c7b2734a5aaa81f3517176015efbed0501d747fd6dfd39e4f0555308e45af07-d # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b025/_pkg_.a # internal
+cp $WORK/b025/_pkg_.a /Users/tristian/Library/Caches/go-build/a4/a4fb82b5f876671a6e1b9f2624dd47e2c36841bed457d9f778947d1c085ea6c4-d # internal
+os
+mkdir -p $WORK/b024/
+cat >$WORK/b024/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$WORK/b004/_pkg_.a
+packagefile internal/poll=$WORK/b025/_pkg_.a
+packagefile internal/syscall/unix=$WORK/b028/_pkg_.a
+packagefile internal/testlog=$WORK/b029/_pkg_.a
+packagefile io=$WORK/b023/_pkg_.a
+packagefile runtime=$WORK/b011/_pkg_.a
+packagefile sync=$WORK/b018/_pkg_.a
+packagefile sync/atomic=$WORK/b020/_pkg_.a
+packagefile syscall=$WORK/b026/_pkg_.a
+packagefile time=$WORK/b027/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/os
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b024/_pkg_.a -trimpath $WORK/b024 -p os -std -buildid gGnqTMQPzvdUqC5EHoKV/gGnqTMQPzvdUqC5EHoKV -goversion go1.12.6 -D "" -importcfg $WORK/b024/importcfg -pack -c=4 ./dir.go ./dir_unix.go ./env.go ./env_default.go ./error.go ./error_posix.go ./error_unix.go ./exec.go ./exec_posix.go ./exec_unix.go ./executable.go ./executable_darwin.go ./file.go ./file_posix.go ./file_unix.go ./getwd.go ./getwd_darwin.go ./path.go ./path_unix.go ./pipe_bsd.go ./proc.go ./rawconn.go ./removeall_at.go ./stat.go ./stat_darwin.go ./stat_unix.go ./sticky_bsd.go ./str.go ./sys.go ./sys_bsd.go ./sys_unix.go ./types.go ./types_unix.go ./wait_unimp.go
+cd /Users/tristian/go/pkg/mod/github.com/triztian/my.special.library@v0.0.0-20190702005630-92faf8ca4418/sub-package
+TERM='dumb' clang -I . -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b030=/tmp/go-build -gno-record-gcc-switches -fno-common -I $WORK/b030/ -g -O2 -o $WORK/b030/_x003.o -c sum.c
+cd $WORK/b030
+TERM='dumb' clang -I /Users/tristian/go/pkg/mod/github.com/triztian/my.special.library@v0.0.0-20190702005630-92faf8ca4418/sub-package -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b030=/tmp/go-build -gno-record-gcc-switches -fno-common -I ./ -g -O2 -o ./_cgo_main.o -c _cgo_main.c
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b024/_pkg_.a # internal
+cd /Users/tristian/go/pkg/mod/github.com/triztian/my.special.library@v0.0.0-20190702005630-92faf8ca4418/sub-package
+TERM='dumb' clang -I . -fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=$WORK/b030=/tmp/go-build -gno-record-gcc-switches -fno-common -o $WORK/b030/_cgo_.o $WORK/b030/_cgo_main.o $WORK/b030/_x001.o $WORK/b030/_x002.o $WORK/b030/_x003.o -g -O2
+cp $WORK/b024/_pkg_.a /Users/tristian/Library/Caches/go-build/eb/eb5053a08d0871badca224afdec797e533246fe0f584ee13fb311ee76f34b945-d # internal
+fmt
+mkdir -p $WORK/b003/
+cat >$WORK/b003/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$WORK/b004/_pkg_.a
+packagefile internal/fmtsort=$WORK/b005/_pkg_.a
+packagefile io=$WORK/b023/_pkg_.a
+packagefile math=$WORK/b007/_pkg_.a
+packagefile os=$WORK/b024/_pkg_.a
+packagefile reflect=$WORK/b006/_pkg_.a
+packagefile strconv=$WORK/b016/_pkg_.a
+packagefile sync=$WORK/b018/_pkg_.a
+packagefile unicode/utf8=$WORK/b017/_pkg_.a
+EOF
+cd /usr/local/Cellar/go/1.12.6/libexec/src/fmt
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b003/_pkg_.a -trimpath $WORK/b003 -p fmt -std -complete -buildid JYfa6C1w3EOKsrmFIWkv/JYfa6C1w3EOKsrmFIWkv -goversion go1.12.6 -D "" -importcfg $WORK/b003/importcfg -pack -c=4 ./doc.go ./format.go ./print.go ./scan.go
+cd /Users/tristian/go/pkg/mod/github.com/triztian/my.special.library@v0.0.0-20190702005630-92faf8ca4418/sub-package
+TERM='dumb' /usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/cgo -dynpackage subpkg -dynimport $WORK/b030/_cgo_.o -dynout $WORK/b030/_cgo_import.go
+cat >$WORK/b030/importcfg << 'EOF' # internal
+# import config
+packagefile runtime/cgo=$WORK/b031/_pkg_.a
+packagefile syscall=$WORK/b026/_pkg_.a
+EOF
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b030/_pkg_.a -trimpath $WORK/b030 -p github.com/triztian/my.special.library/sub-package -lang=go1.12 -buildid 8yDakBZtI4fUtxfaj6Ns/8yDakBZtI4fUtxfaj6Ns -goversion go1.12.6 -D "" -importcfg $WORK/b030/importcfg -pack -c=4 $WORK/b030/_cgo_gotypes.go $WORK/b030/sum.cgo1.go $WORK/b030/_cgo_import.go
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/pack r $WORK/b030/_pkg_.a $WORK/b030/_x001.o $WORK/b030/_x002.o $WORK/b030/_x003.o # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b030/_pkg_.a # internal
+cp $WORK/b030/_pkg_.a /Users/tristian/Library/Caches/go-build/17/174dc4e3759d5819765278b14e2b7be724f15f9001fd886b49b83885c8654909-d # internal
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b003/_pkg_.a # internal
+cp $WORK/b003/_pkg_.a /Users/tristian/Library/Caches/go-build/2a/2af26c4fb779917052536db9a95bbb82ff2b5c2ff422abedbf5c82322aa29011-d # internal
+github.com/triztian/my.binary.project/cmd
+mkdir -p $WORK/b002/
+cat >$WORK/b002/importcfg << 'EOF' # internal
+# import config
+packagefile fmt=$WORK/b003/_pkg_.a
+packagefile github.com/triztian/my.special.library/sub-package=$WORK/b030/_pkg_.a
+EOF
+cd /Users/tristian/Repositories/github.com/triztian/my.binary.project/cmd
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b002/_pkg_.a -trimpath $WORK/b002 -p github.com/triztian/my.binary.project/cmd -lang=go1.12 -complete -buildid 9REZF1osyHoKmvJRMH7n/9REZF1osyHoKmvJRMH7n -goversion go1.12.6 -D "" -importcfg $WORK/b002/importcfg -pack -c=4 ./cmd.go
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b002/_pkg_.a # internal
+cp $WORK/b002/_pkg_.a /Users/tristian/Library/Caches/go-build/ef/efcaec88ee491b79bc4071aa3c788c2b3b85104bb1c36aafd1844adba1016458-d # internal
+github.com/triztian/my.binary.project
+mkdir -p $WORK/b001/
+cat >$WORK/b001/_gomod_.go << 'EOF' # internal
+package main
+import _ "unsafe"
+//go:linkname __debug_modinfo__ runtime/debug.modinfo
+var __debug_modinfo__ = "0w\xaf\f\x92t\b\x02A\xe1\xc1\a\xe6\xd6\x18\xe6path\tgithub.com/triztian/my.binary.project\nmod\tgithub.com/triztian/my.binary.project\t(devel)\t\ndep\tgithub.com/triztian/my.special.library\tv0.0.0-20190702005630-92faf8ca4418\th1:iWGLuWMljpN9vgwHr1NbDoQlHUh5cTzGpdUxVeq+jRw=\n\xf92C1\x86\x18 r\x00\x82B\x10A\x16\xd8\xf2"
+var keepalive_modinfo = __debug_modinfo__
+func init() { keepalive_modinfo = __debug_modinfo__ }
+	EOF
+cat >$WORK/b001/importcfg << 'EOF' # internal
+# import config
+packagefile github.com/triztian/my.binary.project/cmd=$WORK/b002/_pkg_.a
+packagefile runtime=$WORK/b011/_pkg_.a
+EOF
+cd /Users/tristian/Repositories/github.com/triztian/my.binary.project
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/compile -o $WORK/b001/_pkg_.a -trimpath $WORK/b001 -p main -lang=go1.12 -complete -buildid M-HNhwmWXMbzLwK6sE_p/M-HNhwmWXMbzLwK6sE_p -goversion go1.12.6 -D "" -importcfg $WORK/b001/importcfg -pack -c=4 ./main.go $WORK/b001/_gomod_.go
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b001/_pkg_.a # internal
+cp $WORK/b001/_pkg_.a /Users/tristian/Library/Caches/go-build/78/782ee397d2b68947e5a6f0a35f2315d28b56cfc0f4ec7dc489108dd0330787dd-d # internal
+cat >$WORK/b001/importcfg.link << 'EOF' # internal
+packagefile github.com/triztian/my.binary.project=$WORK/b001/_pkg_.a
+packagefile github.com/triztian/my.binary.project/cmd=$WORK/b002/_pkg_.a
+packagefile runtime=$WORK/b011/_pkg_.a
+packagefile fmt=$WORK/b003/_pkg_.a
+packagefile github.com/triztian/my.special.library/sub-package=$WORK/b030/_pkg_.a
+packagefile internal/bytealg=$WORK/b012/_pkg_.a
+packagefile internal/cpu=$WORK/b008/_pkg_.a
+packagefile runtime/internal/atomic=$WORK/b013/_pkg_.a
+packagefile runtime/internal/math=$WORK/b014/_pkg_.a
+packagefile runtime/internal/sys=$WORK/b015/_pkg_.a
+packagefile errors=$WORK/b004/_pkg_.a
+packagefile internal/fmtsort=$WORK/b005/_pkg_.a
+packagefile io=$WORK/b023/_pkg_.a
+packagefile math=$WORK/b007/_pkg_.a
+packagefile os=$WORK/b024/_pkg_.a
+packagefile reflect=$WORK/b006/_pkg_.a
+packagefile strconv=$WORK/b016/_pkg_.a
+packagefile sync=$WORK/b018/_pkg_.a
+packagefile unicode/utf8=$WORK/b017/_pkg_.a
+packagefile runtime/cgo=$WORK/b031/_pkg_.a
+packagefile syscall=$WORK/b026/_pkg_.a
+packagefile sort=$WORK/b022/_pkg_.a
+packagefile sync/atomic=$WORK/b020/_pkg_.a
+packagefile math/bits=$WORK/b009/_pkg_.a
+packagefile internal/poll=$WORK/b025/_pkg_.a
+packagefile internal/syscall/unix=$WORK/b028/_pkg_.a
+packagefile internal/testlog=$WORK/b029/_pkg_.a
+packagefile time=$WORK/b027/_pkg_.a
+packagefile unicode=$WORK/b021/_pkg_.a
+packagefile internal/race=$WORK/b019/_pkg_.a
+EOF
+mkdir -p $WORK/b001/exe/
+cd .
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/link -o $WORK/b001/exe/a.out -importcfg $WORK/b001/importcfg.link -buildmode=exe -buildid=_F__aY8fNsVonJiKuZxQ/M-HNhwmWXMbzLwK6sE_p/ZykmAQYfojB4kqmPCbBL/_F__aY8fNsVonJiKuZxQ -extld=clang $WORK/b001/_pkg_.a
+/usr/local/Cellar/go/1.12.6/libexec/pkg/tool/darwin_amd64/buildid -w $WORK/b001/exe/a.out # internal
+mv $WORK/b001/exe/a.out my.binary.project
+rm -r $WORK/b001/

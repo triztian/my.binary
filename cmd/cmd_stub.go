@@ -1,6 +1,11 @@
 package cmd
 
+import (
+	"fmt"
+)
+
 // Run ...
 func Run() error {
-	return run()
+	run()
+	return nil
 }
